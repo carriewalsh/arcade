@@ -26,10 +26,10 @@ module.exports = {
       createdAt: new Date(),
       updatedAt: new Date()
     }
-  ])
+  ], {});
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('Games', null, {})
+    return queryInterface.bulkDelete('Games', null, {});
   }
 };
